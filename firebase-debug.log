@@ -1,0 +1,35 @@
+[debug] [2021-01-10T14:36:42.905Z] ----------------------------------------------------------------------
+[debug] [2021-01-10T14:36:42.914Z] Command:       D:\node.exe C:\Users\SAURABH KUMAR\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2021-01-10T14:36:42.916Z] CLI Version:   9.1.2
+[debug] [2021-01-10T14:36:42.916Z] Platform:      win32
+[debug] [2021-01-10T14:36:42.917Z] Node Version:  v10.18.0
+[debug] [2021-01-10T14:36:42.921Z] Time:          Sun Jan 10 2021 20:06:42 GMT+0530 (India Standard Time)
+[debug] [2021-01-10T14:36:42.922Z] ----------------------------------------------------------------------
+[debug] [2021-01-10T14:36:42.923Z] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=563749932&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-01-10T14:39:05.094Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/0AY0e-g5aVYTzpnRglgtfn3LUtVc91l5XjSx68cCt9k5u1N81jpTq0rxVSJ9BwNmwdYA2OA","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"http://localhost:9005","grant_type":"authorization_code"}
+[debug] [2021-01-10T14:39:13.522Z] Token Fetch Error: FirebaseError: Server Error. tunneling socket could not be established, cause=connect ECONNREFUSED 127.0.0.1:80
+    at Request._callback (C:\Users\SAURABH KUMAR\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\SAURABH KUMAR\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:198:13)
+    at Request.EventEmitter.emit (domain.js:448:20)
+    at Request.onRequestError (C:\Users\SAURABH KUMAR\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:198:13)
+    at ClientRequest.EventEmitter.emit (domain.js:448:20)
+    at ClientRequest.onError (C:\Users\SAURABH KUMAR\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\tunnel-agent\index.js:179:21)
+    at Object.onceWrapper (events.js:286:20)
+    at ClientRequest.emit (events.js:198:13)
+    at ClientRequest.EventEmitter.emit (domain.js:448:20)
+    at Socket.socketErrorListener (_http_client.js:392:9)
+    at Socket.emit (events.js:198:13)
+    at Socket.EventEmitter.emit (domain.js:448:20)
+    at emitErrorNT (internal/streams/destroy.js:91:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
